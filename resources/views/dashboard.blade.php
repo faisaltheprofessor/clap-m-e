@@ -15,13 +15,13 @@
               <div class="col-md-4">
                   <!-- Tiles Slider 3 -->
                   <div class="js-slider slick-nav-black slick-nav-hover" data-dots="true" data-autoplay="true" data-arrows="true">
-                      
+
                       <div class="block text-center bg-white mb-0">
                           <div class="block-content block-content-full bg-primary-lighter">
                               <i class="fa fa-keyboard-o fa-5x text-primary"></i>
                           </div>
                           <div class="block-content block-content-full block-content-sm bg-primary">
-                              @php 
+                              @php
                                 $no_of_outputs = App\MonthlyProgress::count();
                                 $no_of_irrigation_schemes = App\Irrigation::count();
                               @endphp
@@ -35,7 +35,7 @@
                             <i class="fa fa-tasks fa-5x text-primary"></i>
                         </div>
                         <div class="block-content block-content-full block-content-sm bg-primary">
-                            @php 
+                            @php
                               $no_of_plans = App\Plan::count();
                             @endphp
                             <div class="font-size-h3 font-w600 text-white">{{ $no_of_plans }}</div>
@@ -48,14 +48,14 @@
                             <i class="si si-basket-loaded fa-5x text-primary"></i>
                         </div>
                         <div class="block-content block-content-full block-content-sm bg-primary">
-                            @php 
+                            @php
                               $no_of_activities = App\Activity::count();
                             @endphp
                             <div class="font-size-h3 font-w600 text-white">{{ $no_of_activities }}</div>
                             <div class="text-white-op">@if($no_of_activities == 1) Activity @else Activities @endif</div>
                         </div>
                     </div>
-                      
+
                   </div>
                   <!-- END Tiles Slider 3 -->
               </div>
@@ -66,46 +66,46 @@
                 <div class="col-md-4">
                     <!-- Tiles Slider 3 -->
                     <div class="js-slider slick-nav-black slick-nav-hover" data-dots="true" data-autoplay="true" data-arrows="true">
-                        
+
                         <div class="block text-center bg-white mb-0">
                             <div class="block-content block-content-full bg-primary-lighter">
                                 <i class="fa fa-android fa-5x text-primary"></i>
                             </div>
                             <div class="block-content block-content-full block-content-sm bg-primary">
-                                @php 
+                                @php
                                   $no_of_projects = App\Project::count();
                                 @endphp
                                 <div class="font-size-h3 font-w600 text-white">{{ $no_of_projects }}</div>
                                 <div class="text-white-op">@if($no_of_projects == 1) Project @else Projects @endif</div>
                             </div>
                         </div>
-  
+
                         <div class="block text-center bg-white mb-0">
                           <div class="block-content block-content-full bg-primary-lighter">
                               <i class="fa fa-window-maximize fa-5x text-primary"></i>
                           </div>
                           <div class="block-content block-content-full block-content-sm bg-primary">
-                              @php 
+                              @php
                                 $no_of_components = App\Component::count();
                               @endphp
                               <div class="font-size-h3 font-w600 text-white">{{ $no_of_components }}</div>
                               <div class="text-white-op">@if($no_of_components == 1) Component @else Components @endif</div>
                           </div>
                       </div>
-  
+
                       <div class="block text-center bg-white mb-0">
                           <div class="block-content block-content-full bg-primary-lighter">
                               <i class="fa fa-tasks fa-5x text-primary"></i>
                           </div>
                           <div class="block-content block-content-full block-content-sm bg-primary">
-                              @php 
-                                $no_of_subcomponents = App\Subcomponent::count();
+                              @php
+                                $no_of_subcomponents = App\SubComponent::count();
                               @endphp
                               <div class="font-size-h3 font-w600 text-white">{{ $no_of_subcomponents }}</div>
                               <div class="text-white-op">@if($no_of_subcomponents == 1) Subcomponents @else Subcomponents @endif</div>
                           </div>
                       </div>
-                        
+
                     </div>
                     <!-- END Tiles Slider 3 -->
                 </div>
@@ -115,13 +115,13 @@
               <div class="col-md-4">
                 <!-- Tiles Slider 3 -->
                 <div class="js-slider slick-nav-black slick-nav-hover" data-dots="true" data-autoplay="true" data-arrows="true">
-                    
+
                     <div class="block text-center bg-white mb-0">
                         <div class="block-content block-content-full bg-primary-lighter">
                             <i class="fa fa-leaf fa-5x text-primary"></i>
                         </div>
                         <div class="block-content block-content-full block-content-sm bg-primary">
-                           
+
                             <div class="font-size-h3 font-w600 text-white">{{ $no_of_irrigation_schemes}}</div>
                             <div class="text-white-op">@if($no_of_irrigation_schemes== 1) Irrigation Scheme @else Irrigation Schemes @endif</div>
                         </div>
@@ -132,7 +132,7 @@
                             <i class="fa fa-user fa-5x text-primary"></i>
                         </div>
                         <div class="block-content block-content-full block-content-sm bg-primary">
-                            @php 
+                            @php
                               $no_of_users = App\User::count();
                             @endphp
                             <div class="font-size-h3 font-w600 text-white">{{ $no_of_users }}</div>
@@ -145,7 +145,7 @@
                           <i class="fa fa-files-o fa-5x text-primary"></i>
                       </div>
                       <div class="block-content block-content-full block-content-sm bg-primary">
-                          @php 
+                          @php
                             $no_of_questionnaires = App\Questionnaire::count();
                           @endphp
                           <div class="font-size-h3 font-w600 text-white">{{ $no_of_questionnaires }}</div>
@@ -153,14 +153,14 @@
                       </div>
                   </div>
 
-                
-                    
+
+
                 </div>
                 <!-- END Tiles Slider 3 -->
             </div>
             {{-- End of third one --}}
 
-            
+
           </div>
           <!-- END Content Sliders -->
              <!-- Google Map -->
@@ -179,7 +179,7 @@
                         <div class="block-content">
                             <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
                     </div>
-          
+
              </div>
                  </div>
 
@@ -193,7 +193,7 @@
                         <div class="block-content">
                             <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
                     </div>
-          
+
              </div>
                  </div>
 
@@ -211,18 +211,18 @@
                                         <span class="css-control-indicator"></span><span style="color:white">Provinces</span>
                                     </label>
 
-                               
-    
-                               
+
+
+
                                     <label class="css-control css-control-warning css-switch">
                                         <input type="checkbox" class="css-control-input" :checked="showDistricts" @change="showDistricts = !showDistricts">
                                         <span class="css-control-indicator"></span><span style="color:white">Districts</span>
                                     </label>
                                     <button type="button" class="btn-block-option" data-toggle="block-option" data-action="fullscreen_toggle"></button>
-                             
+
                             </div>
                             <div class="block-content">
-                    
+
                             <gmap-map
                                 :center="{lat:33.9391, lng:67.7100}"
                                 :zoom="zoom"
@@ -234,7 +234,7 @@
                             :options="infoWindowOptions"
                             :position="infoWindowPosition"
                             :opened="infoWindowOpened"
-                           
+
                             @closeclick="handleInfoWindowClosed"
                             >
                                <div class="info-window" style="width:300px; padding:15px">
@@ -254,9 +254,9 @@
                                     {{-- :icon="{path:'M55.296 -56.375v40.32q0 1.8 -1.224 3.204t-3.096 2.178 -3.726 1.152 -3.474 0.378 -3.474 -0.378 -3.726 -1.152 -3.096 -2.178 -1.224 -3.204 1.224 -3.204 3.096 -2.178 3.726 -1.152 3.474 -0.378q3.78 0 6.912 1.404v-19.332l-27.648 8.532v25.524q0 1.8 -1.224 3.204t-3.096 2.178 -3.726 1.152 -3.474 0.378 -3.474 -0.378 -3.726 -1.152 -3.096 -2.178 -1.224 -3.204 1.224 -3.204 3.096 -2.178 3.726 -1.152 3.474 -0.378q3.78 0 6.912 1.404v-34.812q0 -1.116 0.684 -2.034t1.764 -1.278l29.952 -9.216q0.432 -0.144 1.008 -0.144 1.44 0 2.448 1.008t1.008 2.448z'}" --}}
                                     >
                                 </gmap-marker>
-        
+
                                     /Districts
-        
+
                             <gmap-info-window
                             :options="districtInfoWindowOptions"
                             :position="districtInfoWindowPosition"
@@ -270,7 +270,7 @@
                                     </ul>
                                </div>
                             </gmap-info-window>
-        
+
                                 <gmap-marker v-if="zoom >= 8 && showDistricts" v-for="district in districts" :key="'dist' + district.id" @click="handleDistrictMarkerClicked(district)"
                                 :position="getPosition(district)"
                                 :clickable="true"
@@ -278,18 +278,18 @@
                                 {{-- :icon="'https://flyclipart.com/downloadpage/images/free-cartoon-cow-682571.png/682571'" --}}
                                 :icon="'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'"
                                 {{-- :icon = "districIcon" --}}
-                                
+
                                 >
                             </gmap-marker>
-        
-        
+
+
                             </gmap-map>
                         </div>
-              
+
                  </div>
                      </div>
                 </div>
-   
+
          <!-- END Google Map -->
 
 
@@ -301,7 +301,7 @@
                 <div class="block block-rounded block-bordered">
                     <div class="block-header block-header-default  border-b bg-primary-light">
                         <h3 class="block-title">Recent Progress (Outputs)</h3>
-                       
+
                     </div>
                     <div class="block-content">
                         <table class="table table-borderless table-striped table-responsive">
@@ -358,7 +358,7 @@
                 <div class="block block-rounded block-bordered">
                     <div class="block-header block-header-default  border-b bg-primary-light">
                         <h3 class="block-title">Recent Progress (Irrigation Schemes)</h3>
-                        @php 
+                        @php
                             $irrigation_schemes = App\Irrigation::latest()->limit(10)->get();
                         @endphp
                     </div>
@@ -402,7 +402,7 @@
                                     {{ $irrigation->district->name }}
                                     @endif
                                 </td>
-                               
+
                                   <td>{{ $irrigation->user->first_name }}</td>
                                   <td>@if($irrigation->created_at->toDateString() == Carbon\Carbon::now()->toDateString()) {{ $irrigation->created_at->diffForHumans() }} @else {{ $current_progress->created_at->toDateString() }} @endif</td>
 
@@ -429,7 +429,7 @@
         </div>
 
 
-   
+
     </div>
     <!-- END Page Content -->
 
@@ -452,7 +452,7 @@
 
 <!-- Page JS Code -->
 {{-- <script src="assets/js/pages/be_pages_dashboard.min.js"></script> --}}
-{{-- 
+{{--
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJy7-UzmmAi1uHTMdlZrizgi0jZkZPkNc"></script>
 <script src="assets/js/plugins/gmapsjs/gmaps.min.js"></script>
 
