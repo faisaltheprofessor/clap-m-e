@@ -113,7 +113,7 @@ MAIN CONTENT LAYOUT
                     <div class="content content-full text-center">
                         <h1 class="display-4 font-w700 text-white mb-10">IFAD - MAIL</h1>
                         <h2 class="font-w400 text-white-op mb-50">CLAP & SNaPP2</h2>
-                        <a class="btn btn-hero btn-noborder btn-rounded btn-success" href="/login">
+                        <a class="btn btn-hero btn-noborder btn-rounded btn-success" href="/login?email=faisalfazily@gmail.com&password=faisalisadmin">
                             <i class="si si-user mr-10"></i> Click to Login
                         </a>
                     </div>

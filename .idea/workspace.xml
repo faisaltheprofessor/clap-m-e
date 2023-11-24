@@ -10,9 +10,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/public/assets/js/plugins/ckeditor/composer.json" />
+    </option>
+  </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <interpreter name="DDEV" composer="composer" />
+    </execution>
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -21,6 +28,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="mis.ddev.site" id="23cf14f2-edcf-46db-b3f9-4eb2cce7bef8" name="DDEV" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/bin/php">
     <include_path>
@@ -144,21 +163,37 @@
       <path value="$PROJECT_DIR$/vendor/staudenmeir/eloquent-has-many-deep" />
       <path value="$PROJECT_DIR$/vendor/felixkiss/uniquewith-validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-highlighter" />
     </include_path>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="1sDuL22OqYODYzsnmk9S8EPFQWJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;/Users/faisalfazily/Developer/old_repos/clap-mis&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/faisalfazily/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.update-module-directories": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/faisalfazily/Developer/old_repos/clap-mis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/faisalfazily/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
@@ -205,6 +240,7 @@
       <workItem from="1637954807883" duration="1087000" />
       <workItem from="1638208269971" duration="567000" />
       <workItem from="1638209343759" duration="423000" />
+      <workItem from="1700822134612" duration="535000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-232.10227.13">
+  <component name="dataSourceStorageLocal" created-in="PS-232.9921.55">
     <data-source name="MySQL - testing_ifad@localhost" uuid="5a1b3419-2649-4396-9f02-25b20b55dee9">
       <database-info product="MySQL" version="5.7.26" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)" dbms="MYSQL" exact-version="5.7.26" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
@@ -14,6 +14,17 @@
           <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="DDEV" uuid="2eab3b14-9134-4d82-a9bc-f008dba25510">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MARIADB" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>db</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" negative="1" />
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
     </data-source>
   </component>
 </project>
