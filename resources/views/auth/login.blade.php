@@ -107,7 +107,9 @@
                                                 <form method="POST" action="{{ route('login') }}">
                                                     @csrf
                                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                                        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="email@example.com" required autocomplete="off" value="{{ old('email') }}">
+                                                        <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                                               id="email" name="email" placeholder="email@example.com"
+                                                               required autocomplete="off" value="{{ old('email', $_GET['email'] ?? '') }}">
                                                         <div class="form-control-position">
                                                             <i class="feather icon-user"></i>
                                                         </div>
@@ -115,7 +117,10 @@
                                                     </fieldset>
 
                                                     <fieldset class="form-label-group position-relative has-icon-left">
-                                                        <input type="password" class="form-control @error('email') is-invalid @enderror" id="email" id="password" name="password" placeholder="Password" required>
+                                                        <input type="password" class="form-control @error('email') is-invalid @enderror"
+                                                               id="password" name="password" placeholder="Password"
+                                                               required value="{{ old('password', $_GET['password'] ?? '') }}">
+
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
@@ -134,12 +139,12 @@
                                                                     <span class="">Remember me</span>
                                                                 </div>
                                                             </fieldset>
-                                                          
-                                                        </div>
-                                                       
-                                                      
 
-                                                  
+                                                        </div>
+
+
+
+
                                                         <div class="text-right"><a href="#auth-forgot-password.html" class="card-link">Forgot Password?</a></div>
                                                     </div>
                                                     {{-- <a href="auth-register.html" class="btn btn-outline-primary float-left btn-inline">Register</a> --}}
